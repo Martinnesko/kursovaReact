@@ -1,0 +1,12 @@
+{
+  
+    "scripts": {
+      "start": "cross-env PORT=3001 react-scripts start",
+      "server": "json-server --watch db.json --port 3000",
+      "dev": "concurrently \"npm run server\" \"npm run start\""
+    },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3"
+  }
+}
